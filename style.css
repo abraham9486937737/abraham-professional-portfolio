@@ -63,6 +63,19 @@ html,body{height:100%;font-family:var(--font);background:var(--bg);color:var(--t
     color: var(--text);
     margin-bottom: 6px;
 }
+.cert-list li {
+    margin-bottom: 10px;
+}
+
+.cert-list a {
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.cert-list a:hover {
+    text-decoration: underline;
+}
 /* right content */
 .right h2{font-size:16px;color:var(--accent);margin-bottom:8px}
 .right p{font-size:14px;color:var(--text);line-height:1.55;margin-bottom:12px;text-align:justify}
@@ -83,3 +96,4 @@ html,body{height:100%;font-family:var(--font);background:var(--bg);color:var(--t
   .profile-photo{width:96px;height:96px}
   .container{padding:12px}
 }
+
