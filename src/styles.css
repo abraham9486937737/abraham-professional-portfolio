@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at top right, rgba(59, 130, 246, 0.16), transparent 36%),
+    radial-gradient(circle at 20% 20%, rgba(96, 165, 250, 0.08), transparent 42%),
+    #070d1a;
+  color: #e2e8f0;
+}
+
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 80;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  color: #f8fafc;
+  background-color: rgba(15, 23, 42, 0.95);
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+.section-space {
+  @apply mb-7 mt-7 sm:mb-10 sm:mt-10;
+}
+
+.section-heading {
+  @apply mb-4 text-2xl font-bold tracking-tight text-slate-100 sm:text-3xl;
+}
+
+.section-subtitle {
+  @apply mb-8 max-w-3xl text-sm leading-relaxed text-slate-300 sm:text-base;
+}
+
+.glass-card {
+  @apply rounded-2xl border border-white/10 bg-white/5 p-5 shadow-glass backdrop-blur-md transition duration-300;
+}
+
+.glass-card:hover {
+  @apply border-accent-400/40 bg-white/[0.07];
+}
+
+.focus-ring {
+  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-400 focus-visible:ring-offset-2 focus-visible:ring-offset-navy-900;
+}
+
+.button-primary {
+  @apply inline-flex items-center justify-center rounded-lg border border-accent-400/40 bg-accent-500/20 px-5 py-2.5 text-sm font-semibold text-slate-100 transition duration-300 hover:-translate-y-0.5 hover:border-accent-300 hover:bg-accent-500/30;
+}
+
+.button-secondary {
+  @apply inline-flex items-center justify-center rounded-lg border border-slate-500/40 bg-slate-800/35 px-5 py-2.5 text-sm font-semibold text-slate-200 transition duration-300 hover:-translate-y-0.5 hover:border-slate-300/50 hover:bg-slate-700/45;
+}
+
+.nav-link {
+  @apply rounded-md px-3 py-2 text-sm text-slate-300 transition duration-300 hover:bg-white/5 hover:text-white;
+}
+
+.badge {
+  @apply rounded-full border border-accent-400/35 bg-accent-500/10 px-2.5 py-1 text-xs font-medium text-accent-200;
+}
