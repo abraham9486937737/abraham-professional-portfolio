@@ -47,7 +47,7 @@ export default function Projects() {
                 <a
                   href={project.github}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="focus-ring inline-flex items-center gap-2 text-sm font-medium text-accent-300 transition hover:text-accent-200"
                   aria-label={`Open ${project.title} GitHub repository`}
                 >
@@ -59,7 +59,7 @@ export default function Projects() {
                 <a
                   href={project.demo}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="focus-ring inline-flex items-center gap-2 text-sm font-medium text-accent-300 transition hover:text-accent-200"
                   aria-label={`Open ${project.title} live demo`}
                 >

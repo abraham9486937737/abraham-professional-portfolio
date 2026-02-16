@@ -49,12 +49,15 @@ export default function Hero() {
           </div>
 
           <div className="mx-auto w-full max-w-[220px] lg:max-w-[260px]">
-            <img
-              src={`${assetBaseUrl}images/abraham.jpg`}
-              alt="Portrait of Abraham P"
-              loading="lazy"
-              className="h-auto w-full rounded-2xl border border-white/15 object-cover shadow-glass"
-            />
+            <picture>
+              <source srcSet={`${assetBaseUrl}images/abraham.webp`} type="image/webp" />
+              <img
+                src={`${assetBaseUrl}images/abraham.jpg`}
+                alt="Portrait of Abraham P"
+                loading="lazy"
+                className="h-auto w-full rounded-2xl border border-white/15 object-cover shadow-glass"
+              />
+            </picture>
           </div>
         </div>
       </motion.div>
