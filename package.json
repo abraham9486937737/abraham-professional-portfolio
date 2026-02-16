@@ -2,12 +2,14 @@
   "name": "abu-portfolio-mobile-friendly",
   "private": true,
   "version": "1.0.0",
+  "homepage": "https://abraham9486937737.github.io/abraham-professional-portfolio/",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "npm run build && gh-pages -d dist"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "framer-motion": "^11.15.0",

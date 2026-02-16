@@ -2,6 +2,8 @@ import { motion } from 'framer-motion';
 import { FaArrowRight, FaDownload } from 'react-icons/fa';
 
 export default function Hero() {
+  const assetBaseUrl = import.meta.env.BASE_URL;
+
   return (
     <section id="hero" className="section-space" aria-labelledby="hero-title">
       <motion.div
@@ -35,7 +37,7 @@ export default function Hero() {
               </motion.a>
 
               <motion.a
-                href="/Abraham_PonnuRaj_Resume.pdf"
+                href={`${assetBaseUrl}Abraham_PonnuRaj_Resume.pdf`}
                 download
                 className="focus-ring button-secondary"
                 whileHover={{ scale: 1.02 }}
@@ -48,7 +50,7 @@ export default function Hero() {
 
           <div className="mx-auto w-full max-w-[220px] lg:max-w-[260px]">
             <img
-              src="/images/abraham.jpg"
+              src={`${assetBaseUrl}images/abraham.jpg`}
               alt="Portrait of Abraham P"
               loading="lazy"
               className="h-auto w-full rounded-2xl border border-white/15 object-cover shadow-glass"
